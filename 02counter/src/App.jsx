@@ -8,7 +8,7 @@ function App() {
   // let counter = 5;
 
   const addValue = () => {
-    counter = counter + 1;
+    counter = counter + 2;
     setCounter(counter)
     console.log("value added", counter);
   }
