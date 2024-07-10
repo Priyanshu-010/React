@@ -1,9 +1,12 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 
 function App() {
   let [counter, setCounter] = useState(5)
   // let counter = 5;
+  useEffect(() => {
+    document.title = counter;
+  })
 
   const addValue = () => {
     counter = counter + 1;
