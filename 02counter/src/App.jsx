@@ -6,7 +6,7 @@ function App() {
   // let counter = 5;
   useEffect(() => {
     document.title = counter;
-  })
+  }, [counter])
 
   const addValue = () => {
     counter = counter + 1;
