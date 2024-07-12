@@ -11,6 +11,8 @@ function App() {
     setTodos((prev) => [{ id: Date.now(), ...todo }, ...prev]);
   }
 
+  const updatedTodo = (id, todo) => { }
+
   return (
     <TodoProvider value={{ todos, addTodo, updatedTodo, deleteTodo, toggleComplpete }}>
       <div className="bg-[#172842] min-h-screen py-8">
