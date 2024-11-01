@@ -3,7 +3,7 @@ import React from 'react'
 const button = (props) => {
   return (
     <div>
-      <h1>{props.children}</h1>
+      {props.children}
       <button onClick={props.HandleClick}>
         {props.text}
       </button>
